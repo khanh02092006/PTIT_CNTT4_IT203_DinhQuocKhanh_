@@ -1,0 +1,36 @@
+package session15;
+
+public class EditAction {
+    private String description;
+    private String time;
+
+    // Constructor
+    public EditAction(String description, String time) {
+        this.description = description;
+        this.time = time;
+    }
+
+    // Getter & Setter
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    // Hiển thị thông tin chỉnh sửa
+    @Override
+    public String toString() {
+        return "Thời gian: " + time + " | Nội dung: " + description;
+    }
+
+}
